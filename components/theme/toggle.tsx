@@ -5,7 +5,6 @@ import { Button, type ButtonProps } from "@/components/ui/button";
 import { useThemeToggle } from "@/components/theme/useToggle";
 
 import { cn } from "@/lib/utils";
-import { MunIcon } from "@/app/(main)/icons";
 
 export function ThemeToggle({ className, ...props }: ButtonProps) {
   const { isDark, toggle, hydrated } = useThemeToggle();
