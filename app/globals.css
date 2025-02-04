@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+:root {
+  height: 100%;
+  scrollbar-width: none;
+  -webkit-scrollbar-width: none;
+}
+
 @layer {
   :root {
     --header-row-height: 44px;
