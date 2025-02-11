@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 
-export async function GET() {
+export async function GET(req: Request) {
   try {
     const solutions = await db.solution.findMany();
     return NextResponse.json(solutions);
